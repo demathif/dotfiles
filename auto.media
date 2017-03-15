@@ -1,0 +1,5 @@
+mmc			-fstype=vfat												:/dev/mmcblk0p1
+HDD			-fstype=cifs,username=openelec,rw,noperm,password=openelec	://192.168.1.6/HDD
+FK-HDD		-fstype=cifs,username=openelec,rw,noperm,password=openelec	://192.168.1.6/FK-HDD
+downloads	-fstype=cifs,username=openelec,rw,noperm,password=openelec	://192.168.1.6/Downloads
+tvshows		-fstype=cifs,username=openelec,rw,noperm,password=openelec	://192.168.1.6/TV\ Shows
