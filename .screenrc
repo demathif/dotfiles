@@ -1,0 +1,6 @@
+defscrollback 1000000
+startup_message off
+vbell off
+term screen-256color
+altscreen on
+hardstatus alwayslastline '%{= KW} %{= KW}%-w%{= Kr}[%{= KG}%n %t%{= Kr}]%{= KW}%+w %-= %{KG} %H%{KW} %{= Kr}| %{= Kc}%l %{= Kr}| %{= Kw}%d/%m/%y %{= Kr}| %{= KG}%C%A%{-}'
