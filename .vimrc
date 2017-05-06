@@ -18,3 +18,6 @@ set cmdheight=1			" height of the command bar
 
 set t_Co=256			" 256 color mode
 colorscheme wombat256	" colorscheme
+
+"http://vim.wikia.com/wiki/Remove_unwanted_spaces with F5
+:nnoremap <silent> <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
