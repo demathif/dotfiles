@@ -156,13 +156,19 @@ bar {
 }
 
 # custom start-up
+exec --no-startup-id xrandr --output VGA-1 --auto --right-of DP-1
 exec --no-startup-id synergys
 exec --no-startup-id redshift
-exec --no-startup-id feh --bg-fill ~/Pictures/wall.jpg
+exec --no-startup-id xcompmgr
+
+#custom locker
+#set $locker xtrlock
+set $locker "/work/scripts/fuzzy_lock.sh"
+exec xautolock -time 60 -locker $locker &
 
 #custom binding
 bindsym $mod+Return exec xterm -fa Fixed -fs 11
-bindsym $mod+Pause exec xtrlock
+bindsym $mod+Pause exec $locker
 bindsym XF86AudioRaiseVolume exec amixer -q sset Master 3%+
 bindsym XF86AudioLowerVolume exec amixer -q sset Master 3%-
 bindsym XF86AudioMute exec amixer -q sset Master toggle
