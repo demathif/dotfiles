@@ -15,6 +15,7 @@ lol = log --pretty=format:'%C(yellow)%h %Cred%ad %Cblue%an%Cgreen%d %Creset%s' -
 flip = "!sh -c 'git rebase --quiet --onto HEAD~2 HEAD~1 HEAD; git cherry-pick ORIG_HEAD~1'"
 update = "!sh -c 'git remote | xargs -L1 -P8 git remote update -p'"
 fixup = "!sh -c 'c=$(git rev-list -1 HEAD $0); git commit --no-edit --fixup $c $0'"
+fixall = "!sh -c 'for f in $(git diff --name-only); do git fixup $f; done'"
 
 [diff]
 tool = vimdiff
