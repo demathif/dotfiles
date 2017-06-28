@@ -1,4 +1,5 @@
 mmc			-fstype=vfat												:/dev/mmcblk0p1
+ssd			-fstype=auto												:UUID="b65bdd94-9cc4-4233-bf12-881034333bd3"
 HDD			-fstype=cifs,username=openelec,rw,noperm,password=openelec	://192.168.1.6/HDD
 FK-HDD		-fstype=cifs,username=openelec,rw,noperm,password=openelec	://192.168.1.6/FK-HDD
 downloads	-fstype=cifs,username=openelec,rw,noperm,password=openelec	://192.168.1.6/Downloads
