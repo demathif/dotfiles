@@ -5,6 +5,7 @@ email = fdemathieu@gmail.com
 [core]
 autocrlf = false
 eol = lf
+gitproxy = /home/demathif/gitproxy.sh
 
 [color]
 ui = auto
@@ -20,6 +21,9 @@ fixall = "!sh -c 'for f in $(git diff --name-only); do git fixup $f; done'"
 [diff]
 tool = vimdiff
 guitool = meld
+
+[url "https://"]
+insteadOf = git://
 
 [sendemail]
 from = Franck Demathieu <fdemathieu@gmail.com>
