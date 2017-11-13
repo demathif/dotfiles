@@ -6,6 +6,7 @@
 	autocrlf = false
 	eol = lf
 	gitproxy = /home/demathif/gitproxy.sh
+	longpaths = true
 
 [color]
 	ui = auto
