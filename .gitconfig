@@ -1,34 +1,35 @@
 [user]
-name = "Franck Demathieu"
-email = fdemathieu@gmail.com
+	name = "Franck Demathieu"
+	email = fdemathieu@gmail.com
 
 [core]
-autocrlf = false
-eol = lf
-gitproxy = /home/demathif/gitproxy.sh
+	autocrlf = false
+	eol = lf
+	gitproxy = /home/demathif/gitproxy.sh
 
 [color]
-ui = auto
+	ui = auto
 
 [alias]
-ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
-lol = log --pretty=format:'%C(yellow)%h %Cred%ad %Cblue%an%Cgreen%d %Creset%s' --date=short
-flip = "!sh -c 'git rebase --quiet --onto HEAD~2 HEAD~1 HEAD; git cherry-pick ORIG_HEAD~1'"
-update = "!sh -c 'git remote | xargs -L1 -P8 git remote update -p'"
-fixup = "!sh -c 'c=$(git rev-list -1 HEAD $0); git commit --no-edit --fixup $c $0'"
-fixall = "!sh -c 'for f in $(git diff --name-only); do git fixup $f; done'"
+	ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
+	lol = log --pretty=format:'%C(yellow)%h %Cred%ad %Cblue%an%Cgreen%d %Creset%s' --date=short
+	flip = "!sh -c 'git rebase --quiet --onto HEAD~2 HEAD~1 HEAD; git cherry-pick ORIG_HEAD~1'"
+	update = "!sh -c 'git remote | xargs -L1 -P8 git remote update -p'"
+	fixup = "!sh -c 'c=$(git rev-list -1 HEAD $0); git commit --no-edit --fixup $c $0'"
+	fixall = "!sh -c 'for f in $(git diff --name-only); do git fixup $f; done'"
+	sed = "!git grep -z --full-name -l '.' | xargs -0 sed -i -e"
 
 [diff]
-tool = vimdiff
-guitool = meld
+	tool = vimdiff
+	guitool = meld
 
 [url "https://"]
-insteadOf = git://
+	insteadOf = git://
 
 [sendemail]
-from = Franck Demathieu <fdemathieu@gmail.com>
-smtpserver = smtp.gmail.com
-smtpserverport = 587
-smtpencryption = tls
-smtpserver = smtp.gmail.com
-smtpuser = fdemathieu@gmail.com
+	from = Franck Demathieu <fdemathieu@gmail.com>
+	smtpserver = smtp.gmail.com
+	smtpserverport = 587
+	smtpencryption = tls
+	smtpserver = smtp.gmail.com
+	smtpuser = fdemathieu@gmail.com
