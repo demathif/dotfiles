@@ -12,15 +12,15 @@
 	ui = auto
 
 [alias]
-	ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
 	lol = log --pretty=format:'%C(yellow)%h %Cred%ad %Cblue%an%Cgreen%d %Creset%s' --date=short
 	flip = "!sh -c 'git rebase --quiet --onto HEAD~2 HEAD~1 HEAD; git cherry-pick ORIG_HEAD~1'"
 	update = "!sh -c 'git remote | xargs -L1 -P8 git remote update -p'"
 	fixup = "!sh -c 'c=$(git rev-list -1 HEAD $0); git commit --no-edit --fixup $c $0'"
 	fixall = "!sh -c 'for f in $(git diff --name-only); do git fixup $f; done'"
 	sed = "!git grep -z --full-name -l '.' | xargs -0 sed -i -e"
-	spull1 = "!sh -c 'git pull $0 $1 && git submodule sync --recursive && git submodule update --init --recursive'"
-	spull = "!sh -c 'echo $@; __git_spull() { echo git pull $0 $1 && git submodule sync --recursive && git submodule update --init --recursive; }; __git_spull()'"
+	spull = "!sh -c 'git pull $0 $1 && git submodule sync --recursive && git submodule update --init --recursive'"
+	supdate ="!git submodule update --init --recursive --remote"
+	scratch = "!git reset --hard HEAD && git clean -fdx"
 
 [diff]
 	tool = vimdiff
