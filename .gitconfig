@@ -5,13 +5,15 @@
 [core]
 	autocrlf = false
 	eol = lf
-	gitproxy = /home/demathif/gitproxy.sh
+	gitproxy = $HOME/gitproxy.sh
 	longpaths = true
+	gitattributesFile = $HOME/gitattributes
 
 [color]
 	ui = auto
 
 [alias]
+	ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
 	lol = log --pretty=format:'%C(yellow)%h %Cred%ad %Cblue%an%Cgreen%d %Creset%s' --date=short
 	flip = "!sh -c 'git rebase --quiet --onto HEAD~2 HEAD~1 HEAD; git cherry-pick ORIG_HEAD~1'"
 	update = "!sh -c 'git remote | xargs -L1 -P8 git remote update -p'"
@@ -26,6 +28,14 @@
 	tool = vimdiff
 	guitool = meld
 	submodule = log
+
+[diff "slx"]
+	binary = true
+	textconv = unzip -p -v
+
+[diff "bin"]
+	binary = true
+	textconv = hexdump -C -v
 
 [status]
 	submoduleSummary = true
