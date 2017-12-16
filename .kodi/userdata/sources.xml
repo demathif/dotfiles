@@ -1,0 +1,83 @@
+<sources>
+    <programs>
+        <default pathversion="1"></default>
+    </programs>
+    <video>
+        <default pathversion="1"></default>
+        <source>
+            <name>movies</name>
+            <path pathversion="1">/home/kodi/movies/</path>
+            <path pathversion="1">/media/HDD1/movies/</path>
+            <path pathversion="1">/media/HDD2/movies/</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>tvshows</name>
+            <path pathversion="1">/home/kodi/tvshows/</path>
+            <path pathversion="1">/media/HDD1/tvshows/</path>
+            <path pathversion="1">/media/HDD2/tvshows/</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>root</name>
+            <path pathversion="1">/</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>shows</name>
+            <path pathversion="1">/media/HDD1/shows/</path>
+            <allowsharing>true</allowsharing>
+        </source>
+    </video>
+    <music>
+        <default pathversion="1"></default>
+        <source>
+            <name>mp3</name>
+            <path pathversion="1">/home/kodi/mp3/</path>
+            <path pathversion="1">/media/HDD1/mp3/</path>
+            <path pathversion="1">/media/HDD2/mp3/</path>
+            <allowsharing>true</allowsharing>
+        </source>
+    </music>
+    <pictures>
+        <default pathversion="1"></default>
+    </pictures>
+    <files>
+        <default pathversion="1"></default>
+        <source>
+            <name>HDD1</name>
+            <path pathversion="1">/media/HDD1/</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>HDD2</name>
+            <path pathversion="1">/media/HDD2/</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>addons</name>
+            <path pathversion="1">/media/HDD1/kodi/</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>downloads</name>
+            <path pathversion="1">/home/kodi/downloads/</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>root</name>
+            <path pathversion="1">/</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>tvaddons</name>
+            <path pathversion="1">http://fusion.tvaddons.ag/</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>superrepo</name>
+            <path pathversion="1">http://srp.nu/</path>
+            <allowsharing>true</allowsharing>
+        </source>
+    </files>
+</sources>

@@ -1,0 +1,8 @@
+<favourites>
+    <favourite name="Films Animés">ActivateWindow(10025,&quot;videodb://movies/genres/19/&quot;,return)</favourite>
+    <favourite name="Dessins Animés">ActivateWindow(10025,&quot;videodb://tvshows/genres/28/&quot;,return)</favourite>
+    <favourite name="Gulli Dessins Animés">ActivateWindow(10025,&quot;plugin://plugin.video.GulliReplay/get_shows/http%3A%2F%2Freplay.gulli.fr%2Fdessins-animes/&quot;,return)</favourite>
+    <favourite name="Gulli Séries">ActivateWindow(10025,&quot;plugin://plugin.video.GulliReplay/get_shows/http%3A%2F%2Freplay.gulli.fr%2Fseries/&quot;,return)</favourite>
+    <favourite name="TF1 Jeunesse">ActivateWindow(10025,&quot;plugin://plugin.video.freplay/?channel=tf1&amp;mode=folder&amp;name=Jeunesse&amp;param=jeunesse&quot;,return)</favourite>
+    <favourite name="M6 Jeunesse">ActivateWindow(10025,&quot;plugin://plugin.video.freplay/?channel=m6&amp;mode=folder&amp;name=Jeunesse&amp;param=category%7c146&quot;,return)</favourite>
+</favourites>
