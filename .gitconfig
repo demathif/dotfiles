@@ -20,9 +20,11 @@
 	fixup = "!sh -c 'c=$(git rev-list -1 HEAD $0); git commit --no-edit --fixup $c $0'"
 	fixall = "!sh -c 'for f in $(git diff --name-only); do git fixup $f; done'"
 	sed = "!git grep -z --full-name -l '.' | xargs -0 sed -i -e"
-	spull = "!sh -c 'git pull $0 $1 && git submodule sync --recursive && git submodule update --init --recursive'"
+	spull = "!sh -c 'git fetch $0 --tags && git checkout $0/$1 && git submodule sync --recursive && git submodule foreach git reset --hard HEAD && git submodule update --init --recursive'"
 	supdate ="!git submodule update --init --recursive --remote"
 	scratch = "!git reset --hard HEAD && git clean -fdx"
+	stag ="!sh -c 'git submodule foreach git lol -1 | grep $0 | grep -v $1'"
+	spullt = "!sh -c 'git fetch $0 --tags && git pull $0 $1 && git submodule sync --recursive && git submodule update --init --recursive && git submodule foreach git checkout $1'"
 
 [diff]
 	tool = vimdiff
@@ -37,6 +39,10 @@
 	binary = true
 	textconv = hexdump -C -v
 
+[diff "zip"]
+	binary = true
+	textconv = unzip -p -v
+
 [status]
 	submoduleSummary = true
 
@@ -50,3 +56,8 @@
 	smtpencryption = tls
 	smtpserver = smtp.gmail.com
 	smtpuser = fdemathieu@gmail.com
+
+[help]
+	autocorrect = 1
+[credential]
+	helper = store --file ~/.git.store
