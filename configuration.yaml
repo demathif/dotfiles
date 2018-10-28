@@ -65,6 +65,11 @@ tts:
 # Cloud
 cloud:
 
+media_player:
+  - platform: kodi
+    host: 192.168.1.6
+    name: arcturus
+
 group: !include groups.yaml
 automation: !include automations.yaml
 script: !include scripts.yaml
