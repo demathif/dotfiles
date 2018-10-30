@@ -121,3 +121,6 @@ fi
 export EDITOR=vim
 export BR2_DL_DIR=/work/downloads/
 export DL_DIR=/work/downloads/
+if [[ -z "$TMUX" ]] && [ "$SSH_CONNECTION" != "" ]; then
+    tmux attach-session -t ssh_tmux || tmux new-session -s ssh_tmux
+fi
