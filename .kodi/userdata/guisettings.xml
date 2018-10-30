@@ -296,12 +296,12 @@
         <esport default="true">9777</esport>
         <esportrange default="true">10</esportrange>
         <upnpannounce default="true">true</upnpannounce>
-        <upnpcontroller default="true">false</upnpcontroller>
-        <upnplookforexternalsubtitles default="true">false</upnplookforexternalsubtitles>
+        <upnpcontroller>true</upnpcontroller>
+        <upnplookforexternalsubtitles>true</upnplookforexternalsubtitles>
         <upnprenderer default="true">false</upnprenderer>
-        <upnpserver default="true">false</upnpserver>
+        <upnpserver>true</upnpserver>
         <useairplaypassword default="true">false</useairplaypassword>
-        <webserver default="true">false</webserver>
+        <webserver>true</webserver>
         <webserverpassword default="true"></webserverpassword>
         <webserverport default="true">8080</webserverport>
         <webserverusername default="true">kodi</webserverusername>
