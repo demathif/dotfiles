@@ -24,9 +24,15 @@ config:
 
 # Uncomment this if you are using SSL/TLS, running in Docker container, etc.
 http:
-  base_url: bootes.ddnes.net
-  server_port: 8123
-  api_password: gps1980
+  base_url: bootes2.ddns.net
+  ssl_certificate: /etc/letsencrypt/live/bootes2.ddns.net/fullchain.pem
+  ssl_key: /etc/letsencrypt/live/bootes2.ddns.net/privkey.pem
+  #api_password: gps1980
+
+#no_ip:
+#  domain: bootes2.ddns.net
+#  username: YOUR_USERNAME
+#  password: YOUR_PASSWORD
 
 # Checks for available updates
 # Note: This component will send some information about your system to
