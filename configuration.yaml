@@ -59,6 +59,10 @@ sun:
 sensor:
   # Weather prediction
   - platform: yr
+    monitored_conditions:
+      - temperature
+      - symbol
+      - precipitation
 
   # Bbox sensor
   - platform: bbox
