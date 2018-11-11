@@ -1,0 +1,72 @@
+
+pollux:
+  hide_if_away: false
+  icon: cast
+  mac: E0:51:63:E2:47:C9
+  name: pollux
+  picture:
+  track: true
+
+arcturus:
+  hide_if_away: false
+  icon: kodi
+  mac: 00:01:2E:2D:97:D7
+  name: arcturus
+  picture:
+  track: true
+
+samsunggalaxys7edge:
+  hide_if_away: false
+  icon: cellphone-andrdoid
+  mac: 4C:66:41:80:7F:20
+  name: Samsung-Galaxy-S7-edge
+  picture:
+  track: true
+
+nexus5:
+  hide_if_away: false
+  icon: cellphone-android
+  mac: BC:F5:AC:F3:A8:7E
+  name: Nexus-5
+  picture:
+  track: true
+
+deneb:
+  hide_if_away: false
+  icon: debian
+  mac: 18:3D:A2:33:AC:58
+  name: deneb
+  picture:
+  track: true
+
+samsunggalaxytab4:
+  hide_if_away: false
+  icon: tablet-android
+  mac: F8:84:F2:A8:1D:1B
+  name: Samsung-Galaxy-Tab-4
+  picture:
+  track: true
+
+samsunggalaxys5:
+  hide_if_away: false
+  icon: cellphone-android
+  mac: 84:38:38:AC:BE:18
+  name: Samsung-Galaxy-S5
+  picture:
+  track: true
+
+brotherdcpj725dw:
+  hide_if_away: false
+  icon: printer
+  mac: EC:55:F9:B6:EE:40
+  name: Brother-DCP-J725DW
+  picture:
+  track: false
+
+fk:
+  hide_if_away: false
+  icon: cellphone-android
+  mac:
+  name: fk
+  picture:
+  track: true

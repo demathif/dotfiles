@@ -23,8 +23,10 @@ frontend:
 config:
 
 # Uncomment this if you are using SSL/TLS, running in Docker container, etc.
-# http:
-#   base_url: example.duckdns.org:8123
+http:
+  base_url: bootes.ddnes.net
+  server_port: 8123
+  api_password: gps1980
 
 # Checks for available updates
 # Note: This component will send some information about your system to
@@ -57,6 +59,7 @@ sun:
 sensor:
   # Weather prediction
   - platform: yr
+
   # Bbox sensor
   - platform: bbox
     monitored_variables:
@@ -76,7 +79,6 @@ media_player:
   - platform: kodi
     host: 192.168.1.6
     name: arcturus
-
 
 zone:
   - name: Ecole
@@ -103,6 +105,7 @@ zone:
 # Bbox tracker
 device_tracker:
   - platform: bbox
+  - platform: gpslogger
 
 group: !include groups.yaml
 automation: !include automations.yaml
