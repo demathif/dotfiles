@@ -77,6 +77,29 @@ media_player:
     host: 192.168.1.6
     name: arcturus
 
+
+zone:
+  - name: Ecole
+    latitude: 43.625027
+    longitude: 6.886511
+    radius: 250
+    icon: mdi:school
+  - name: Travail
+    latitude: 43.627510
+    longitude: 7.049670
+    radius: 250
+    icon: mdi:briefcase
+  - name: Pelissanne
+    latitude: 43.637660
+    longitude: 5.160880
+    radius: 250
+    icon: mdi:home-account
+  - name: Sanary
+    latitude: 43.118970
+    longitude: 5.804760
+    radius: 250
+    icon: mdi:home-account
+
 # Bbox tracker
 device_tracker:
   - platform: bbox
