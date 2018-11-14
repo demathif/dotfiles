@@ -85,6 +85,18 @@ sensor:
     scan_interval: 10800
     command: "ssl-cert-check -b -c /etc/letsencrypt/live/bootes2.ddns.net/cert.pem | awk '{ print $NF }'"
 
+shell_command:
+  renew_ssl: ~/certbot/certbot-auto renew --quiet --no-self-upgrade --standalone --preferred-challenges http-01
+
+automation:
+  - alias: 'Auto Renew SSL Cert'
+    trigger:
+      platform: numeric_state
+      entity_id: sensor.ssl_cert_expiry
+      below: 29
+    action:
+      service: shell_command.renew_ssl
+
 # Text to speech
 tts:
   - platform: google
@@ -125,5 +137,4 @@ device_tracker:
   - platform: gpslogger
 
 group: !include groups.yaml
-automation: !include automations.yaml
 script: !include scripts.yaml
