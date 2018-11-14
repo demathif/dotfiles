@@ -136,5 +136,10 @@ device_tracker:
   - platform: bbox
   - platform: gpslogger
 
+logger:
+  default: critical
+  logs:
+    homeassistant.components.http.ban: warning
+
 group: !include groups.yaml
 script: !include scripts.yaml
