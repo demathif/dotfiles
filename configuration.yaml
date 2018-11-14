@@ -78,6 +78,13 @@ sensor:
       - current_down_bandwidth
       - current_up_bandwidth
 
+sensor:
+  - platform: command_line
+    name: SSL cert expiry
+    unit_of_measurement: days
+    scan_interval: 10800
+    command: "ssl-cert-check -b -c /etc/letsencrypt/live/bootes2.ddns.net/cert.pem | awk '{ print $NF }'"
+
 # Text to speech
 tts:
   - platform: google
