@@ -78,7 +78,6 @@ sensor:
       - current_down_bandwidth
       - current_up_bandwidth
 
-sensor:
   - platform: command_line
     name: SSL cert expiry
     unit_of_measurement: days
