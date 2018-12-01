@@ -2,8 +2,8 @@ homeassistant:
   # Name of the location where Home Assistant is running
   name: Home
   # Location required to calculate the time the sun rises and sets
-  latitude: 43.6359922
-  longitude: 6.8551552
+  latitude: !secret latitude_home
+  longitude: !secret longitude_home
   # Impacts weather/sunrise data (altitude above sea level in meters)
   elevation: 250
   # metric for Metric, imperial for Imperial
@@ -27,7 +27,6 @@ http:
   base_url: bootes2.ddns.net
   ssl_certificate: /etc/letsencrypt/live/bootes2.ddns.net/fullchain.pem
   ssl_key: /etc/letsencrypt/live/bootes2.ddns.net/privkey.pem
-  #api_password: gps1980
 
 #no_ip:
 #  domain: bootes2.ddns.net
@@ -111,36 +110,25 @@ media_player:
 
 zone:
   - name: Ecole
-    latitude: 43.625027
-    longitude: 6.886511
+    latitude: !secret latitude_school
+    longitude: !secret longitude_school
     radius: 250
     icon: mdi:school
   - name: Travail
-    latitude: 43.627510
-    longitude: 7.049670
+    latitude: !secret latitude_work
+    longitude: !secret longitude_work
     radius: 250
     icon: mdi:briefcase
-  - name: Pelissanne
-    latitude: 43.637660
-    longitude: 5.160880
-    radius: 250
-    icon: mdi:home-account
-  - name: Sanary
-    latitude: 43.118970
-    longitude: 5.804760
-    radius: 250
-    icon: mdi:home-account
 
 # Bbox tracker
 device_tracker:
   - platform: bbox
-  - platform: gpslogger
 
 notify:
   - name: sms_with_free_mobile
     platform: free_mobile
-    username: 24155030
-    access_token: CGijuEZuLyCZRm
+    username: !secret freemobile_username
+    access_token: !secret freemobile_access_token
 
 logger:
   default: critical
