@@ -136,6 +136,12 @@ device_tracker:
   - platform: bbox
   - platform: gpslogger
 
+notify:
+  - name: sms_with_free_mobile
+    platform: free_mobile
+    username: 24155030
+    access_token: CGijuEZuLyCZRm
+
 logger:
   default: critical
   logs:
