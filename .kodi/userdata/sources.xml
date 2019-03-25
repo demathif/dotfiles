@@ -9,6 +9,7 @@
             <path pathversion="1">/home/kodi/movies/</path>
             <path pathversion="1">/media/HDD1/movies/</path>
             <path pathversion="1">/media/HDD2/movies/</path>
+            <path pathversion="1">/media/HDD1/shows/</path>
             <allowsharing>true</allowsharing>
         </source>
         <source>
@@ -24,8 +25,8 @@
             <allowsharing>true</allowsharing>
         </source>
         <source>
-            <name>shows</name>
-            <path pathversion="1">/media/HDD1/shows/</path>
+            <name>music</name>
+            <path pathversion="1">/media/HDD1/music/</path>
             <allowsharing>true</allowsharing>
         </source>
     </video>
