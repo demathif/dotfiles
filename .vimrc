@@ -19,7 +19,6 @@ set cmdheight=1			" height of the command bar
 set t_Co=256			" 256 color mode
 colorscheme torte	" colorscheme
 
-
 " Default to not read-only in vimdiff
 set noro
 
@@ -27,5 +26,5 @@ set noro
 :nnoremap <silent> <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
 
 "https://github.com/tpope/vim-pathogen
-execute pathogen#infect()
-filetype plugin indent on
+"execute pathogen#infect()
+"filetype plugin indent on
